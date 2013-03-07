@@ -1,0 +1,31 @@
+!!! 5
+html(lang='de')
+  head
+    meta(charset='utf-8')
+    title The Instrument Village
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    link(href='../stylesheets/bootstrap.css', rel='stylesheet')
+    link(href='../stylesheets/bootstrap-responsive.css', rel='stylesheet')
+    link(href='../stylesheets/style.css', rel='stylesheet')
+    // HTML5 shim, for IE6-8 support of HTML5 elements
+    //if lt IE 9
+    script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+  body
+    .container
+      .row-fluid
+        .navbar.navbar-inverse.span8.offset1
+          .navbar-inner
+            ul.nav
+              li.active
+                a(href='instrument') Home
+              li
+                a(href='news') News
+              li
+                a(href='#about') Citizens
+              li
+                a(href='shop') Shop
+        img.logo.span2(src='../images/villagelogo.png')
+
+      block content

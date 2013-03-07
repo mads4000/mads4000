@@ -1,0 +1,47 @@
+extends layout
+
+block content
+  .row-fluid
+    #myCarousel.carousel.slide.span12
+      .carousel-inner
+        .item.active
+          img(src='../images/instrument.jpg', alt='')
+          .carousel-caption
+            h3 Instrument
+            p
+              | Die vier Bayern liefern mit ihrem selbst betitelten Debüt eine Postrock-Scheibe ab,die hohen
+              | Ansprüchen genügt. Viele tragende Gitarrenriffs, rockige Akkorde, sich stetig steigernde Drums und ein
+              | unaufdringlicher Gesang machen Instrument zu einem intensiven, aber verträumten Trip durch meist
+              | instrumentale, aus der Improvisation heraus entstandene Dramatik...
+        .item
+          img(src='../images/les_jupes.png', alt='')
+          .carousel-caption
+            h3 Les Jupes
+            p
+              | Die vier Bayern liefern mit ihrem selbst betitelten Debüt eine Postrock-Scheibe ab,die hohen
+              | Ansprüchen genügt. Viele tragende Gitarrenriffs, rockige Akkorde, sich stetig steigernde Drums und ein
+              | unaufdringlicher Gesang machen Instrument zu einem intensiven, aber verträumten Trip durch meist
+              | instrumentale, aus der Improvisation heraus entstandene Dramatik...
+        .item
+          img(src='../images/steamingsatellites.jpg', alt='')
+          .carousel-caption
+            h3 Steaming Satellites
+            p
+              | Die vier Bayern liefern mit ihrem selbst betitelten Debüt eine Postrock-Scheibe ab,die hohen
+              | Ansprüchen genügt. Viele tragende Gitarrenriffs, rockige Akkorde, sich stetig steigernde Drums und ein
+              | unaufdringlicher Gesang machen Instrument zu einem intensiven, aber verträumten Trip durch meist
+              | instrumentale, aus der Improvisation heraus entstandene Dramatik...
+        a.left.carousel-control(href='#myCarousel', data-slide='prev') ‹
+        a.right.carousel-control(href='#myCarousel', data-slide='next') ›
+        footer
+
+  script(src='http://localhost:3000/javascripts/jquery.min.js')
+  script(src='http://localhost:3000/javascripts/bootstrap.js')
+  script(src='http://localhost:3000/javascripts/core.js')
+  script
+    !function ($) {
+    $(function () {
+    // carousel demo
+    $('#myCarousel').carousel()
+    })
+    }(window.jQuery)
