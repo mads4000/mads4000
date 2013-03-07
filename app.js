@@ -2,7 +2,6 @@
  * Module dependencies.
  */
 var express = require('express'),
-    db = require('./model/db'),
     routes = require('./routes'),
     http = require('http'),
     path = require('path');
