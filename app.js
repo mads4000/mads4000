@@ -2,7 +2,9 @@
  * Module dependencies.
  */
 var express = require('express'),
+    db = require('./model/db'),
     routes = require('./routes'),
+    citizens = require('./routes/citizens'),
     http = require('http'),
     path = require('path');
 
@@ -25,6 +27,7 @@ app.configure('development', function () {
 });
 
 app.get('/', routes.index);
+app.get('/citizens/:name', citizens.get);
 //app.get('/users', user.list);
 //app.post('/create', routes.create);
 //app.get('/destroy/:id', routes.destroy);
